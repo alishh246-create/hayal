@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Hayal Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f7f5f2;
+    color: #333;
+    animation: fadeBody 0.8s ease forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeBody { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+  header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    overflow: hidden;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease-out forwards;
+  }
+
+  @keyframes slideIn { 0% { transform: translateY(-50px); opacity:0;} 100% { transform: translateY(0); opacity:1;} }
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .info-box {
+    flex: 1;
+    min-width: 260px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+  }
+
+  .info-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+
+  .info-box h3 {
+    margin-top: 0;
+    color: #7a0404;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #7a0404;
+    box-shadow: 0 0 6px #7a0404;
+    outline: none;
+  }
+
+  button {
+    background: #7a0404;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  button:hover {
+    background: #500303;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background: #7a0404;
+    color: white;
+  }
+
+  footer {
+    margin-top: 40px;
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  @media(max-width: 768px) {
+    header h1 { font-size: 2.3rem; }
+    .contact-section { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Contact Hayal Events</h1>
+</header>
+
+<div class="container">
+  <div class="contact-section">
+
+    <!-- Info Box -->
+    <div class="info-box">
+      <h3>📍 Our Office</h3>
+      <p>Bahawalpur, Pakistan</p>
+      <h3>📞 Phone</h3>
+      <p>+92 326 5051996</p>
+      <h3>📧 Email</h3>
+      <p>support@hayalevents123.com</p>
+      <h3>⏰ Working Hours</h3>
+      <p>Mon – Sun: 10 AM – 10 PM</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="info-box">
+      <h3>Send us a Message</h3>
+      <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+    
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Hayal Events | Contact Us Anytime
+</footer>
+
+</body>
+</html>

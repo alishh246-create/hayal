@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Package - Hayal Events</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7f5f2;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
+      animation: fadeIn 1.3s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-family: 'Great Vibes', cursive;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .package-box {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .package-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 2.4rem;
+      color: #7a0404;
+      font-weight: 600;
+    }
+
+    .price {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #7a0404;
+    }
+
+    ul {
+      margin-top: 20px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: block;
+      width: 230px;
+      margin: 40px auto 0;
+      padding: 12px 20px;
+      background: #7a0404;
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #500303;
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 25px;
+      display: block;
+      font-size: 1rem;
+      color: #666;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.3rem; }
+      h2 { font-size: 2rem; }
+      .price { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Premium Event Package</h1>
+  </header>
+
+  <div class="container">
+    <div class="package-box">
+      <h2>👑 Premium Package</h2>
+      <p class="price">PKR 250,000</p>
+
+      <ul>
+        <li>Luxury Stage & Venue Décor</li>
+        <li>Customized Theme + LED Backdrop</li>
+        <li>Full Catering for 150+ Guests</li>
+        <li>HD Video & Drone Coverage</li>
+        <li>Guest Welcome Team & Valet Service</li>
+      </ul>
+
+      <a href="{% url 'booking' %}" class="btn">Book Your Event Now</a>
+<a href="{% url 'events' %}" class="back-link">← Back to Packages</a>
+
+    </div>
+  </div>
+
+</body>
+</html>

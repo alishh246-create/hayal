@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Hayal Events</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff0000, #333);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: #fff;
+      text-shadow: 0px 0px 10px rgba(255,0,0,0.7);
+      margin: 0;
+    }
+
+    /* Gallery Grid */
+    .gallery {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 20px rgba(255,0,0,0.6);
+    }
+    /* Top Button */
+#topBtn {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+    /* Back Button */
+    .back-link {
+      display: inline-block;
+      margin: 30px auto;
+      text-decoration: none;
+      background: #ff0000;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      background: #cc0000;
+      transform: scale(1.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #aaa;
+      border-top: 2px solid #ff0000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Event Gallery</h1>
+  </header>
+
+  <!-- 🔥 FULL IMAGES ONLY - NO TEXT -->
+  <div class="gallery">
+
+    <!-- Wedding -->
+      <img src="/static/images/37.png"alt="">
+ <img src="/static/images/39.png"alt="">
+<img src="/static/images/40.png"alt="">
+ <img src="/static/images/41.png"alt="">
+<img src="/static/images/42.jpg"alt=""> 
+<img src="/static/images/43.jpg"alt="">
+<img src="/static/images/44.jpg"alt="">
+ <img src="/static/images/45.png"alt="">
+<img src="/static/images/46.png"alt="">
+
+    <img src="/static/images/13.avif" alt="">
+    <img src="/static/images/11.avif" alt="">
+    <img src="/static/images/v.webp" alt="">
+    <img src="/static/images/wed41.jpg" alt="">
+    <img src="/static/images/wed5.jpg" alt="">
+    <img src="/static/images/12.avif" alt="">
+    <img src="/static/images/14.avif" alt="">
+    <img src="/static/images/s.jpg" alt="">
+ <img src="/static/images/34.png">
+    <img src="/static/images/15.avif" alt="">
+    <img src="/static/images/16.avif" alt="">
+    <img src="/static/images/kk.jpg" alt="">
+    <img src="/static/images/mm.jpg" alt="">
+    <img src="/static/images/17.jpeg" alt="">
+    <img src="/static/images/18.webp" alt="">
+    <img src="/static/images/ii.jfif" alt="">
+     <img src="/static/images/35.png"alt="">
+    <img src="/static/images/19.jpeg" alt="">
+    <img src="/static/images/20.jpeg" alt="">
+    <img src="/static/images/kk.jpg" alt="">
+    <img src="/static/images/mm.jpg" alt="">
+    <img src="/static/images/21.webp" alt="">
+    <img src="/static/images/22.jpeg" alt="">
+    <img src="/static/images/ii.jfif" alt="">
+    
+    <!-- Birthday -->
+    <img src="/static/images/q.jpg" alt="">
+    <img src="/static/images/w.jfif" alt="">
+    <img src="/static/images/23.webp" alt="">
+    <img src="/static/images/24.webp"alt="">
+    <img src="/static/images/bb.jfif" alt="">
+    <img src="/static/images/dd.jfif" alt="">
+    <img src="/static/images/25.webp"">
+    <img src="/static/images/26.webp"">
+ <img src="/static/images/ff.webp" alt="">
+    <img src="/static/images/hh.avif" alt="">
+    <img src="/static/images/nn.jpg" alt="">
+    <img src="/static/images/27.png"alt="">
+    <img src="/static/images/28.png"alt="">
+    <img src="/static/images/gg.webp" alt="">
+    <img src="/static/images/ll.jpg" alt="">
+    <img src="/static/images/29.png"">
+     <img src="/static/images/30.png"alt=""?
+    <img src="/static/images/hh.avif" alt="">
+    <img src="/static/images/31.png"">
+    <img src="/static/images/32.png"">
+    <img src="/static/images/mm.jpg" alt="">
+    <img src="/static/images/gg.webp" alt="">
+    <img src="/static/images/33.png"alt">
+    <img src="/static/images/ii.jfif" alt="">
+    
+    <!-- Corporate -->
+    <img src="/static/images/ff.webp" alt="">
+    <img src="/static/images/hh.avif" alt="">
+    <img src="/static/images/nn.jpg" alt="">
+    <img src="/static/images/kk.jpg" alt="">
+    <img src="/static/images/mm.jpg" alt="">
+    <img src="/static/images/gg.webp" alt="">
+    <img src="/static/images/ll.jpg" alt="">
+    <img src="/static/images/ii.jfif" alt="">
+     <img src="/static/images/ff.webp" alt="">
+    <img src="/static/images/hh.avif" alt="">
+    <img src="/static/images/nn.jpg" alt="">
+    <img src="/static/images/kk.jpg" alt="">
+    <img src="/static/images/mm.jpg" alt="">
+    <img src="/static/images/gg.webp" alt="">
+    <img src="/static/images/ll.jpg" alt="">
+    <img src="/static/images/ii.jfif" alt="">
+     <img src="/static/images/36.png">
+    <img src="/static/images/hh.avif" alt="">
+    <img src="/static/images/nn.jpg" alt="">
+    <img src="/static/images/kk.jpg" alt="">
+    <img src="/static/images/mm.jpg" alt="">
+    <img src="/static/images/37.png"alt="">
+<img src="/static/images/38.png" alt="">
+ <img src="/static/images/39.png"alt="">
+<img src="/static/images/40.png"alt="">
+ <img src="/static/images/41.png"alt=""">
+<img src="/static/images/42.jpg"alt=""> 
+<img src="/static/images/43.jpg"alt="">
+<img src="/static/images/44.jpg"alt="">
+ <img src="/static/images/45.png"alt="">
+<img src="/static/images/46.png"alt="">
+ <img src="/static/images/13.avif" alt="">
+    <img src="/static/images/11.avif" alt="">
+    <img src="/static/images/27.png"alt="">
+    <img src="/static/images/28.png"alt="">
+     <img src="/static/images/17.jpeg" alt="">
+    <img src="/static/images/18.webp" alt="">
+    <img src="/static/images/21.webp" alt="">
+    <img src="/static/images/22.jpeg" alt="">
+  </div>
+ 
+  <div style="text-align:center;">
+   <a href="{% url 'index' %}" class="back-link">⬅️ Back to Home</a>
+
+
+
+  </div>
+
+  <footer>
+  
+    © 2025 Hayal Events | Red & Black Elegance Theme
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

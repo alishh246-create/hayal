@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Hayal Events</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff4d4d, #222);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .thankyou-box {
+      background: rgba(0,0,0,0.7);
+      padding: 40px 60px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,0,0,0.6);
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 20px;
+      color: #ffdd57;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #ff5e00;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e04e00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thankyou-box">
+    <h1>🎉 Thank You!</h1>
+    <p>Thanks for your message! We will contact you as soon as possible.</p>
+   <button>  <a href="{% url 'index' %}" > Back to Home</a> </button>
+ 
+  </div>
+
+</body>
+</html>

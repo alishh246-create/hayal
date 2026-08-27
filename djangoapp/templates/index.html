@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events in Bahawalpur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="script.js"></script>
+<style>
+header h1 {
+  font-family: 'Great Vibes', cursive; /* stylish font */ 
+   margin: 0;
+  font-size: 6px;                    /* thoda bada text */
+  letter-spacing: 3px;                    /* thoda gap letters me */
+  color: #f80606;                         /* pinkish color */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4); /* halka shadow */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+  color: #fdfafa; /* hover pe red tone */
+}
+</style>
+
+  <header>
+    <h1>Hayal Events</h1>
+
+  </header>
+  <style>
+/* Light Theme (default) */
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('A.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.services, .gallery, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero {
+  animation: fadeInZoom 1s ease-out;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Top Button */
+#topBtn {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+/* WhatsApp Button */
+#whatsappBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Hover Effect */
+#whatsappBtn:hover {
+  background: #20bd5a;   /* halka light green */
+  transform: scale(1.1); /* thoda zoom */
+  transition: all 0.3s ease;
+}
+
+
+
+/* Dark Theme */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer {
+  background: #000;
+  color: #fff;
+}
+
+body.dark-mode .section h2 {
+  background-color: #333;
+}
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url("/static/images/T.jpg") no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(248, 244, 244);
+      text-shadow: 0px 0px 8px rgba(0,0,0,0.7);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      background-color:black;
+      color: white;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 0 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.3rem;
+      color: #222;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .price {
+      font-weight: bold;
+      color: #d63384;
+      margin-top: 8px;
+    }
+    /* Lightbox styling */
+/* Instagram link ke liye CSS */
+.insta-link img {
+  width: 28px;              /* same size as FB */
+  height: 28px;
+  position: fixed;
+  bottom: 103px;            /* same vertical position as FB */
+  right: 1855px;            /* FB se thoda left me (adjust this if needed) */
+  vertical-align: middle;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.insta-link img:hover {
+  transform: scale(1.2);    /* zoom effect */
+  filter: brightness(1.3);  /* thoda bright hover pe */
+}
+.fb-link img {
+  width: 28px;   /* size WhatsApp/Instagram ke barabar */
+  height: 5px;
+  position: fixed;
+  bottom: 103px;
+  right: 1900px;
+  vertical-align: middle;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.fb-link img:hover {
+  transform: scale(1.2);         /* zoom effect */
+  filter: brightness(1.3);       /* thoda bright hover pe */
+}
+/* 🔼 Top Button hover only */
+#topBtn {
+  transition: all 0.3s ease;
+}
+#topBtn:hover {
+  background-color: #e50914;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+}
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    font-size: 1.5rem;
+    padding: 60px 10px;
+  }
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+  </style>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'services' %}">Services</a>
+    <a href="{% url 'events' %}">Events</a>
+    <a href="{% url 'gallery' %}">Gallery</a>
+    <a href="{% url 'contact' %}">Contact</a>
+</nav> 
+  </nav>
+<meta name="description" content="Hayal Events - Event planning, decor, weddings and corporate events in Bahawalpur.">
+<meta name="keywords" content="event planner, wedding, Bahawalpur, decor, birthday, Hayal Events">
+<meta name="author" content="Hayal Events">
+
+  <div id="home" class="hero">
+   EVENTS AND DECORATIONS
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="/static/images/Z.jpg" alt="Wedding Service">
+        <h3>Wedding Package</h3>
+        <p>Complete wedding planning including stage décor, catering & photography.</p>
+        <p class="price">PKR 150,000</p>
+      </div>
+      <div class="card">
+        <img src="/static/images/D.jpg" alt="Birthday Service">
+        <h3>Birthday Package</h3>
+        <p>Custom themes, balloon decoration & cake arrangements.</p>
+        <p class="price">PKR 25,000</p>
+      </div>
+      <div class="card">
+        <img src="/static/images/corporate1.jpg" alt="Corporate Service">
+        <h3>Corporate Events</h3>
+        <p>Seminars, product launches & professional stage setups.</p>
+        <p class="price">PKR 80,000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="section">
+    <h2>Upcoming Events</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="/static/images/wedding2.jpg" alt="Wedding venue">
+        <h3>Wedding Expo</h3>
+        <p>October 15, 2025 – Grand showcase of wedding décor & vendors.</p>
+        <p class="price">Venue package : 120,000 </p>
+      </div>
+      <div class="card">
+        <img src="/static/images/cultural1.jpg" alt="Cultural Night">
+        <h3>Cultural Night</h3>
+        <p>November 10, 2025 – Music, dance & food festival in Bahawalpur.</p>
+        <p class="price">Ticket: PKR 1,000</p>
+      </div>
+      <div class="card">
+        <img src="/static/images/X.jpeg" alt="Birthday Specials">
+        <h3>Birthday Specials</h3>
+        <p>Available Year Round – Fun packages for kids & adults birthdays.</p>
+        <p class="price">Packages from PKR 20,000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <h2>Our Event Gallery</h2>
+    <div class="gallery">
+      <img src="/static/images/A.jpg" alt="Wedding Setup" >
+      <img src="/static/images/B.jpg" alt="Bride Ceremony">
+      <img src="/static/images/Mehndi.jpg" alt="Stage Decoration">
+      <img src="/static/images/pak.jpg" alt="wedding">
+    </div>
+  </section>
+    <footer>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>📍 Location: Bahawalpur, Pakistan</p>
+    <p>📞 Phone: +92-326-5051996</p>
+    <p>💌 Email: infohayalevents123@gmail.com</p>
+    
+    <!-- Buttons -->
+  <button id="topBtn">⬆️ Top</button>
+  <a href="https://wa.me/+923265051996" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="WhatsApp" width="32" height="32">
+</a> 
+<a href="https://instagram.com/eeventshayal123" target="_blank">
+  <img src="/static/images/insta--logo.png"
+           alt="insta"width="32" height="32">
+</a>
+          <a href="https://www.facebook.com/eeventshayal123" target="_blank">
+      <img src="/static/images/Facebook_logo.png" 
+           alt="Facebook"width="32" height="32">
+    </a>
+  </section>
+
+    <p>© 2025 Hayal Events | Designed with ❤️ in Bahawalpur</p>
+      <!-- Cute map container -->
+    <h4>Our Location</h4>
+    <div id="footer-map" style="height:200px; width:100%; border-radius:8px;"></div>
+  </footer>
+
+</body>
+</html>
+
+
+<!-- Google Maps API key -->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHzkY9cidtA9FPTxYDEZxQBvFlsLaaxkg&callback=initFooterMap">
+</script>
+<script>
+function initFooterMap() {
+    var center = {lat: 29.394245121442403,    lng: 71.68612429517044}; // GCTW, Bahawalpur
+
+    var map = new google.maps.Map(document.getElementById('footer-map'), {
+        zoom: 15,
+        center: center,
+        disableDefaultUI: true, // buttons hide
+        gestureHandling: 'cooperative'
+    });
+
+    var marker = new google.maps.Marker({
+        position: center,
+        map: map,
+        title: "Hayal Events Location"
+    });
+
+    var infoWindow = new google.maps.InfoWindow({
+        content: "<b>Hayal Events</b><br>Bahawalpur, GCTW"
+    });
+
+    marker.addListener('click', function() {
+        infoWindow.open(map, marker);
+    });
+}
+</script>
+
